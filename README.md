@@ -9,17 +9,13 @@ GitHub Pages로 `모험-스네이크` 앱의 개인정보처리방침을 배포�
 
 ## GitHub Pages 배포 방법
 
-1. GitHub에서 새 저장소를 만듭니다.
-   - 예: `모험-스네이크-privacy-policy`
-2. 이 폴더의 파일들을 저장소 루트에 업로드합니다.
-3. GitHub 저장소에서 `Settings` > `Pages`로 이동합니다.
-4. `Build and deployment`에서 다음처럼 설정합니다.
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-5. 저장 후 잠시 뒤 발급되는 URL을 확인합니다.
-   - 예: `https://계정명.github.io/모험-스네이크-privacy-policy/`
-6. 해당 URL을 Google Play Console의 개인정보처리방침 URL에 입력합니다.
+이 저장소는 `.github/workflows/static.yml`을 통해 `main` 브랜치에 푸시될 때 자동으로 GitHub Pages에 배포됩니다.
+
+1. GitHub 저장소에서 `Settings` > `Pages`로 이동합니다.
+2. `Build and deployment`의 `Source`를 `GitHub Actions`로 설정합니다.
+3. `Actions` 탭에서 `Deploy static content to Pages` 워크플로가 성공했는지 확인합니다.
+4. 배포 URL을 Google Play Console의 개인정보처리방침 URL에 입력합니다.
+   - 예상 URL: `https://smboy86.github.io/privacy-policy-game-snake/`
 
 ## 수정 전 체크
 
